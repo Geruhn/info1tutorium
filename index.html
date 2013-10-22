@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>17.10.13 - 01. Tutorium - Datentypen, Programmierstil und 42</title>
+		<title>24.10.13 - 02. Tutorium - Datentypen, Operatoren und Evaluationen</title>
 
 		<meta name="description" content="Das erste Tutorium im WS2013/14 von Andy Perdana">
 		<meta name="author" content="Andy Perdana">
@@ -61,8 +61,8 @@
 			<div class="slides">
 				<section>
 					<section>
-						<h1>01. Tutorium</h1>
-						<p style="text-align: center !important;">vom 17.10</p>
+						<h1>02. Tutorium</h1>
+						<p style="text-align: center !important;">vom 24.10</p>
 					</section>
 					<section>
 						<a href="?#/themes">Default</a> -
@@ -89,8 +89,12 @@
 				</section>
 
 				<section>
+					<section><h1>R&uuml;ge</h1></section>
+				</section>
+
+				<section>
 					<section>
-						<h1>Datentypen</h1>
+						<h1>Wiederholung: Datentypen</h1>
 					</section>
 					<section>
 						<ul>
@@ -116,7 +120,39 @@
 
 				<section>
 					<section>
-						<h1>Operatoren</h1>
+						<h1>Widening conversion</h1>
+					</section>
+					<section>
+						<p style="text-align: center !important;">byte -&gt; short -&gt; int -&gt; long -&gt; float -&gt; double<br/>
+						&gt;&gt;in dieser Richtung ist implizites Casten m&ouml;glich&gt;&gt;</p>
+					</section>
+					<section>
+						<p>Der Grund hierfür ist einfach:</p>
+						<ul>
+							<li>Speicher wird immer größer</li>
+							<li>keine Genauigkeit geht verloren</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Narrowing conversion</h1></section>
+					<section>
+						<p style="text-align: center !important;">byte &lt;- short &lt;- int &lt;- long &lt;- float &lt;- double<br/>
+						<span style="color: red !important;">&lt;&lt;in dieser Richtung ist nur explizites Casten m&ouml;glich&lt;&lt;</span></p>
+					</section>
+					<section>
+						<p>Der Grund hierfür ist einfach:</p>
+						<ul>
+							<li>Speicher wird immer kleiner</li>
+							<li>Genauigkeit kann verloren gehen</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Wiederholung: Operatoren</h1>
 					</section>
 					<section>
 						<ul>
@@ -157,34 +193,8 @@
 
 				<section>
 					<section>
-						<h1 style="text-align: left; font-size: 3em;">Java-<br/>Namenskonventionen</h1>
-						<blockquote>
-							&ldquo;Wenn du keinen Tweet mit Methodenname und kurzer Beschreibung verfassen kannst, dann ist der Name sch...lecht.&rdquo;
-						</blockquote>
-					</section>
-					<section>
-						<h2>Bezeichner</h2>
-						<ul>
-							<li>Aussagekr&auml;ftige Namen w&auml;hlen wie Kraftfahrzeug, BundesagenturFuerArbeit, HochschuleKarlsruhe, DeutscheBahn</li>
-							<li>Vermische keine verschiedenen Sprachen in Quelltexten.</li>
-							<li>Verwende ausschlie&szlig;lich die alphanumerischen Zeichen A-Z, a-z, 0-9 und den Unterstrich f&uuml;r Bezeichner.</li>
-							<li>Verwende Upper Case Camel Style</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Variablen, Attribute und Parameter</h2>
-						<ul>
-							<li>Schreibe Variablen klein mit von Teilw&ouml;rtern gro&szlig; wie bei anzahl, anzahlErbsen</li>
-							<li>Schreibe Konstanten mit Grossbuchstaben und trenne Teilw&ouml;rter mit wie bei ERDGRAVITATION, PI</li>
-							<li>Verwende mindestens ein Substantiv f&uuml;r Variablen</li>
-							<li>Verwende i,j,k,l f&uuml;r Z&auml;hlvariablen, wenn diese sonst keine weitere Bedeutung haben</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1 style="text-align: left">Quelltext-<br/>
+						<h1 style="text-align: left">Wiederholung: <br/>
+						Quelltext-<br/>
 						formatierung</h1>
 						<blockquote>
 							&ldquo;Formatiere und schreibe deinen Code, als w&uuml;rde ein wahnsinniger Psychopath, der wei&szlig; wo du schl&auml;fst, deinen Code reviewen.&rdquo;
@@ -212,160 +222,124 @@
 							<li>Vermische Kurzschlu&szlig;operatoren nie mit &quot;normalen&quot; Booleschen Operatoren</li>
 						</ul>
 					</section>
-					<section>
-						<h2>Fail-Beispiele aus der AIRPlay API von iOS7</h2>
-						<ul>
-							<li>eventswebkitplaybacktargetavailabilitychanged</li>
-							<li>webkitcurrentplaybacktargetiswirelesschanged</li>
-						</ul>
-					</section>
 				</section>
 
 				<section>
+					<section><h1>if</h1></section>
 					<section>
-						<h1>Variablen und Datentypen</h1>
-					</section>
-					<section>
-						<h2>Aufgabe</h2>
-						<p>
-							Die Klimaanlage im H&ouml;rsaal HE hat eine sehr komplizierte Steuerung. Sie h&auml;ngt von den Folgenden Messwerten ab:
-						</p>
-						<ul>
-							<li>Anzahl Studenten im Saal, zum Beispiel 35</li>
-							<li>Anzahl offener T&uuml;ren, zum Beispiel 1</li>
-							<li>Uhrzeit in Stunden (1-24), zum Beispiel 1 bei 1:12 Uhr oder 14 bei 14:59 Uhr</li>
-							<li>Au&szlig;entemperatur in Grad Celsius, zum Beispiel 33,45 Grad Celsium</li>
-							<li>Licht an/aus, zum Beispiel false</li>
-						</ul>
-						<p>
-							Deklarieren Sie Variablen mit geeigneten Datentypen und den Beispielwerten als initialen Wert für jeden dieser Meßwerte. <br/>
-							Beachten sie dabei die Konventionen aus der Vorlesung.
-						</p>
-					</section>
-					<section>
-						<h2>L&ouml;sung</h2>
-						<ul>
-							<li>Anzahl Studenten im Saal, zum Beispiel 35
-								<ul>
-									<li><span class="hilight_grey code">int numberOfStudents = 35;</span></li>
-								</ul>
-							</li>
-							<li>Anzahl offener Türen, zum Beispiel 1
-								<ul>
-									<li><span class="hilight_grey code">int openDoors = 1;</span></li>
-								</ul>
-							</li>
-							<li>Uhrzeit in Stunden (1-24), zum Beispiel 1 bei 1:12 Uhr oder 14 bei 14:59 Uhr
-								<ul>
-									<li><span class="hilight_grey code">int hour = 14;</span></li>
-								</ul>
-							</li>
-							<li>Außentemperatur in Grad Celsius, zum Beispiel 33,45 Grad Celsium
-								<ul>
-									<li><span class="hilight_grey code">double temperaturCelsius = 33.45;</span></li>
-								</ul>
-							</li>
-							<li>Licht an/aus, zum Beispiel false
-								<ul>
-									<li><span class="hilight_grey code">boolean lightOn = false;</span></li>
-								</ul>
-							</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Boolscher Ausdruck</h1>
-						<pre><code style="font-size: 1.6em; overflow: hidden;">boolean erdeDrehtSich = galileo &amp;&amp; doch;
+						<pre><code data-trim contenteditable data-lang="java" style="font-size: 1.6em; line-height: 1.2em; overflow: hidden;">if (Boolscher Ausdruck) {
+	doSomething();
+}
 						</code></pre>
+						<p><span class="code hilight_grey">doSomething()</span> wird ausgeführt, wenn der boolsche Ausdruck true ist</p>
 					</section>
 					<section>
-						<h2>Aufgabe</h2>
-						<p>Die Klimaanlage ist in Betrieb, falls:</p>
-						<ul>
-							<li>zwischen 17 und 56 Studenten im Saal sind (einschlie&szlig;lich 17 und 56), nicht mehr als 2 T&uuml;ren offen sind und die Uhrzeit in Stunden ungerade ist; oder</li>
-							<li>das Licht an ist und die Au&szlig;entemperatur gr&ouml;&szlig;er als 38,56 Grad Celsius ist.</li>
-						</ul>
-						<p>Geben Sie diesen Sachverhalt als einen Boolschen Java-Ausdruck mit den aus der vorherigen Teilaufgabe deklarierten Variablen an. Beachten Sie die Formatierungsregeln f&uuml;r Ausdr&uuml;cke.</p>
-					</section>
-					<section>
-						<h2>L&ouml;sung</h2>
-						<pre><code data-trim contenteditable data-lang="java">
-							boolean klimaanlageAn = 
-								( 17 <= numberOfStudents 
-									& numberOfStudents <= 56 
-									& openDoors <= 2 
-									& ( hour % 2 == 1 ) ) 
-								| ( lightOn & temperaturCelsius > 38.56 );
+						<h2>Ein Beispiel: </h2>
+						<pre><code data-trim contenteditable data-lang="java" style="font-size: 1.6em; line-height: 1.2em; overflow: hidden;">
+int number = 5;
+if (number % 2 == 0) {
+	System.out.println("Diese Zahl" 
+		+ "ist [...]");
+}
 						</code></pre>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h1>Gleitkommazahl</h1>
-						<blockquote>
-							&ldquo;Es gibt nur 10 verschiedene Typen auf der Welt, die einen verstehen bin&auml;r, die anderen nicht.&rdquo;
-						</blockquote>
+						<h1>if-else</h1>
 					</section>
 					<section>
-						<h2>Von der Festkommazahl(B10) zur Gleitkommazahl(B2)</h2>
-						<h3 style="text-align: left;">18.4</h3>
-						<ol>
-							<li title="Exzess = 2(n-1)-1 (n Bits des Exponenten in der Zahlendarstellung)
-						   = 2(8-1)-1
-						   = (27)-1
-						   = 128-1
-						   = 127">Berechnung des Exzesses <small>(+127)</small></li>
-							<li title="Vorkommaanteil = 18
-							 18 / 2 = 9 Rest 0 (Least-Significant Bit)
-							 9 / 2 = 4 Rest 1
-							 4 / 2 = 2 Rest 0
-							 2 / 2 = 1 Rest 0
-							 1 / 2 = 0 Rest 1 (Most-Significant-Bit)
-							    = 10010
-Nachkommaanteil = 0.4
-							0,4 * 2 = 0,8 → 0 (Most-Significant-Bit)
-							0,8 * 2 = 1,6 → 1
-							0,6 * 2 = 1,2 → 1
-							0,2 * 2 = 0,4 → 0
-							0,4 * 2 = 0,8 → 0
-							0,8 * 2 = 1,6 → 1 (Least-Significant-Bit)
-							    •
-							    •
-							    •
-							    = 0,0110011001100110011...">Umwandlung der Dezimalzahl in eine duale Festkommazahl ohne Vorzeichen</li>
-							<li title="10010,01100110011... * 2^0 = 1,001001100110011... * 2^4">Normieren</li>
-							<li title="da 2^4 → Exponent=4
-							Exponent+Exzess
-							    4+127 = 131
+						<pre><code data-trim contenteditable data-lang="java" style="font-size: 1.6em; line-height: 1.2em; overflow: hidden;">
+int number = 5;
+if (number % 2 == 0) {
+	System.out.println("Diese Zahl "
+		+ "ist gerade.");
+} else {
+	System.out.println("Diese Zahl" 
+		+ "ist ungerade.")
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Ein Beispiel: </h2>
+						<pre><code data-trim contenteditable data-lang="java" style="font-size: 1.6em; line-height: 1.2em; overflow: hidden;">
+char confirmation = 'n';
+if (confirmation == 'y' 
+	|| confirmation == 'Y') {
+	makeSandwich();
+} else {
+	makeSandwich(sudo);
+}
+						</code></pre>
+					</section>
+				</section>
 
-131/2 = 65 Rest 1 (Least-Significant-Bit)
-							 65/2 = 32 Rest 1
-							 32/2 = 16 Rest 0
-							 16/2 = 8 Rest 0
-							 8/2 = 4 Rest 0
-							 4/2 = 2 Rest 0
-							 2/2 = 1 Rest 0
-							 1/2 = 0 Rest 1 (Most-Significant-Bit)
-							   = 10000011
-							">Berechnung des dualen Exponenten</li>
-							<li title="Das Vorzeichen errechnet sich aus der Formel (-1)^s:
-							positiv → 0
-							negativ → 1
-							   = 0
-							">Vorzeichen-Bit bestimmen</li>
-							<li title="1 Bit Vorzeichen + 8 Bit Exponent + 23 Bit Mantisse
-0 10000011 00100110011001100110011 → die Vorkomma-Eins wird als Hidden Bit weggelassen, da dort immer eine 1 steht, braucht man diese nicht zu speichern">Die Gleitkommazahl bilden</li>
-						</ol>
+				<section>
+					<section><h1>Boolscher Ausdruck</h1></section>
+					<section>
+						<h2>Aufgabe</h2>
+						<p>
+							Schreibe einen boolschen Ausdruck(<span class="code hilight_grey">battlefield4IsReleased</span>), welcher aussagt, ob Battlefield schon released ist:
+						</p>
+							<ul>
+								<li>Der 31. Oktober ist vorbei (int today = 20131024) und </li>
+								<li>Entwickler wurden fertig (boolean developersAreDone = false)</li>
+							</ul>
+							oder
+							<ul>
+								<li>Publisher ist geldgierig (boolean publisherIsGreedy = true) und </li>
+								<li>Kontostand der Entwickler sank unter 5 Millionen (double bankaccountDICE = 3943115.79)</li>
+							</ul>
 					</section>
 					<section>
-						<h2>Von Gleitkommazahl(B2) zur Festkommazahl(B10)</h2>
-						<h3 style="text-align: left;">0 10000011 00100110011001100110011</h3>
-						<ol>
-							<li>1.-6. alles rückwärts</li>
-						</ol>
+						<h2>Lösung</h2>
+						<pre><code data-trim contenteditable data-lang="java" style="font-size: 1.6em; line-height: 1.2em; overflow: hidden;">
+int today = 20131024;
+boolean developersAreDone = false;
+boolean publisherIsGreedy = true;
+double bankaccountDICE = 3943115.79;
+
+boolean battlefield4IsReleased =
+	((today > 20131031 
+		&& developersAreDone)
+	|| (publisherIsGreedy 
+		&& bankaccountDICE < 5000000L));
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>if-else</h1></section>
+					<section>
+						<h2>Aufgabe</h2>
+						<p>Wenn das BF4 nicht veröffentlich ist:</p>
+						<ul>
+							<li>
+								dann hält der Tutor Andy (<span class="code hilight_grey">Tutor andy</span>) weiterhin das Tutorium (<span class="code hilight_grey">doTutorium()</span>)
+							</li>
+						</ul>
+						ansonsten
+						<ul>
+							<li>geht der Andy nach Hause zocken(<span class="code hilight_grey">zocken(battlefield4)</span>)</li>
+						</ul>
+						
+						<p>
+						<small>Hint:<br/>
+						andy.doTutorium()<br/>
+						und andy.zocken(battlefield4)</small></p>
+					</section>
+					<section>
+						<h2>Lösung</h2>
+						<pre><code data-trim contenteditable data-lang="java" style="font-size: 1.6em; line-height: 1.2em; overflow: hidden;">
+boolean battlefield4IsReleased = [...];
+
+if(battlefield4IsReleased) {
+	andy.zocken(battlefield4);
+} else {
+	andy.doTutorium();
+}
+						</code></pre>
 					</section>
 				</section>
 
@@ -384,8 +358,7 @@ Nachkommaanteil = 0.4
 				</section>
 
 				<section>
-					<h1>END</h1>
-					<h3>gemacht von Andy Perdana</h3>
+					<h1>Ende</h1>
 				</section>
 
 			</div>
