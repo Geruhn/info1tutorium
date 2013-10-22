@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>17.10.13 - 01. Tutorium - Datentypen, Programmierstil und 42</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Das erste Tutorium im WS2013/14 von Andy Perdana">
+		<meta name="author" content="Andy Perdana">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -28,6 +28,29 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			h1 {
+				font-size: 3em !important;
+			}
+
+			p {
+				text-align: left !important;
+			}
+
+			blockquote {
+				text-align: left !important;
+			}
+
+			.hilight_grey {
+				padding-right: 5px !important;
+				background-color: grey;
+			}
+
+			.code {
+				font-family: lucida !important;
+				font-style: italic !important;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -37,136 +60,11 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h1>01. Tutorium</h1>
+						<p style="text-align: center !important;">vom 17.10</p>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
 						<a href="?#/themes">Default</a> -
 						<a href="?theme=sky#/themes">Sky</a> -
 						<a href="?theme=beige#/themes">Beige</a> -
@@ -176,174 +74,318 @@
 						<a href="?theme=moon.css#/themes">Moon</a> -
 						<a href="?theme=simple.css#/themes">Simple</a> -
 						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
+					</section>
 				</section>
-
+				
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
+					<section>
+						<h1>Organisatorisches</h1>
+					</section>
+					<section>
 						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
+							Zu erreichen unter <a href="mailto:info1@andyperdana.de">info1@andyperdana.de</a> / <a href="http://twitter.com/derGeruhn">@derGeruhn</a>
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
 				</section>
 
 				<section>
 					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
+						<h1>Datentypen</h1>
+					</section>
+					<section>
+						<ul>
+							<li>Ganzzahltypen
+								<ul>
+									<li>byte (8bit)</li>
+									<li>short (16bit)</li>
+									<li>int (32bit)</li>
+									<li>long (64bit)</li>
+								</ul>
+							</li>
+							<li>Gleitkommatypen
+								<ul>
+									<li>float (32bit) (1bit Vorzeichen + 8bit Exponent + 23bit Mantisse)</li>
+									<li>double (64bit) (1bit Vorzeichen + 11bit Exponent + 52bit Mantisse)</li>
+								</ul>
+							</li>
+							<li>boolean (8bit)</li>
+							<li>char (16bit)</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Operatoren</h1>
+					</section>
+					<section>
+						<ul>
+							<li>Binäre arithmetische Operatoren
+								<ul>
+									<li>+ - * /</li>
+									<li>%</li>
+								</ul>
+							</li>
+							<li>Unäre arithmetische Operatoren
+								<ul>
+									<li>-</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<ul>Boolesche Operatoren
+									<li>&amp; und &amp;&amp;</li>
+									<li>| oder ||</li>
+									<li>^</li>
+									<li>!</li>
+								</ul>
+							</li>
+							<li>
+								<ul>Vergleichsoperatoren
+									<li>==</li>
+									<li>!=</li>
+									<li>&lt; und &gt;</li>
+									<li>&lt;= und &gt;=</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1 style="text-align: left; font-size: 3em;">Java-<br/>Namenskonventionen</h1>
+						<blockquote>
+							&ldquo;Wenn du keinen Tweet mit Methodenname und kurzer Beschreibung verfassen kannst, dann ist der Name sch...lecht.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h2>Bezeichner</h2>
+						<ul>
+							<li>Aussagekr&auml;ftige Namen w&auml;hlen wie Kraftfahrzeug, BundesagenturFuerArbeit, HochschuleKarlsruhe, DeutscheBahn</li>
+							<li>Vermische keine verschiedenen Sprachen in Quelltexten.</li>
+							<li>Verwende ausschlie&szlig;lich die alphanumerischen Zeichen A-Z, a-z, 0-9 und den Unterstrich f&uuml;r Bezeichner.</li>
+							<li>Verwende Upper Case Camel Style</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Variablen, Attribute und Parameter</h2>
+						<ul>
+							<li>Schreibe Variablen klein mit von Teilw&ouml;rtern gro&szlig; wie bei anzahl, anzahlErbsen</li>
+							<li>Schreibe Konstanten mit Grossbuchstaben und trenne Teilw&ouml;rter mit wie bei ERDGRAVITATION, PI</li>
+							<li>Verwende mindestens ein Substantiv f&uuml;r Variablen</li>
+							<li>Verwende i,j,k,l f&uuml;r Z&auml;hlvariablen, wenn diese sonst keine weitere Bedeutung haben</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1 style="text-align: left">Quelltext-<br/>
+						formatierung</h1>
+						<blockquote>
+							&ldquo;Formatiere und schreibe deinen Code, als w&uuml;rde ein wahnsinniger Psychopath, der wei&szlig; wo du schl&auml;fst, deinen Code reviewen.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<ul>
+							<li>Mische in einer Klasse nie verschiedene Programmierstile</li>
+							<li>Schreibe nicht mehr als 80 Zeichen pro Zeile (zumindestens nie mehr als auf einmal auf dem Bildschirm zu sehen sind)</li>
+							<li>Setzte vor und nach jedem bin&auml;ren Operator ein Leerzeichen wie bei<br/>
+							1 + b / langerBezeichner * (1 - x)</li>
+							<li>Breche &uuml;berlange Ausdr&uuml;cke vor dem Operator mit der schw&auml;chsten Bindung um</li>
+							<li>Vergleiche Boolesche Werte nicht mit ==<br/>
+							statt <span class="hilight_grey code">esRegnet == true</span> schreibe <span class="hilight_grey code">esRegnet</span><br/>
+							und statt <span class="hilight_grey code">esRegnet == false</span> schreibe <span class="hilight_grey code">!esRegnet</span></li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>W&auml;hle f&uuml;r einen Ausdruck die selbe Operatorenreihenfolge wie in einem mathematischen Ausdruck, implementiere 0 &lt; i &lt; j &lt; n als 0 &lt; i &amp;&amp; i &lt; j &amp;&amp; j &lt; n</li>
+							<li>Vermeide Seiteneffekte <br/>
+							int a; <br/>
+							a = (a = 2) + (a += a) * (a = 1 + a);</li>
+							<li>Breche &uuml;berlange Ausdr&uuml;cke vor dem Operator mit der schw&auml;chsten Bindung um</li>
+							<li>Vermische Kurzschlu&szlig;operatoren nie mit &quot;normalen&quot; Booleschen Operatoren</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Fail-Beispiele aus der AIRPlay API von iOS7</h2>
+						<ul>
+							<li>eventswebkitplaybacktargetavailabilitychanged</li>
+							<li>webkitcurrentplaybacktargetiswirelesschanged</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Variablen und Datentypen</h1>
+					</section>
+					<section>
+						<h2>Aufgabe</h2>
+						<p>
+							Die Klimaanlage im H&ouml;rsaal HE hat eine sehr komplizierte Steuerung. Sie h&auml;ngt von den Folgenden Messwerten ab:
+						</p>
+						<ul>
+							<li>Anzahl Studenten im Saal, zum Beispiel 35</li>
+							<li>Anzahl offener T&uuml;ren, zum Beispiel 1</li>
+							<li>Uhrzeit in Stunden (1-24), zum Beispiel 1 bei 1:12 Uhr oder 14 bei 14:59 Uhr</li>
+							<li>Au&szlig;entemperatur in Grad Celsius, zum Beispiel 33,45 Grad Celsium</li>
+							<li>Licht an/aus, zum Beispiel false</li>
+						</ul>
+						<p>
+							Deklarieren Sie Variablen mit geeigneten Datentypen und den Beispielwerten als initialen Wert für jeden dieser Meßwerte. <br/>
+							Beachten sie dabei die Konventionen aus der Vorlesung.
+						</p>
+					</section>
+					<section>
+						<h2>L&ouml;sung</h2>
+						<ul>
+							<li>Anzahl Studenten im Saal, zum Beispiel 35
+								<ul>
+									<li><span class="hilight_grey code">int numberOfStudents = 35;</span></li>
+								</ul>
+							</li>
+							<li>Anzahl offener Türen, zum Beispiel 1
+								<ul>
+									<li><span class="hilight_grey code">int openDoors = 1;</span></li>
+								</ul>
+							</li>
+							<li>Uhrzeit in Stunden (1-24), zum Beispiel 1 bei 1:12 Uhr oder 14 bei 14:59 Uhr
+								<ul>
+									<li><span class="hilight_grey code">int hour = 14;</span></li>
+								</ul>
+							</li>
+							<li>Außentemperatur in Grad Celsius, zum Beispiel 33,45 Grad Celsium
+								<ul>
+									<li><span class="hilight_grey code">double temperaturCelsius = 33.45;</span></li>
+								</ul>
+							</li>
+							<li>Licht an/aus, zum Beispiel false
+								<ul>
+									<li><span class="hilight_grey code">boolean lightOn = false;</span></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Boolscher Ausdruck</h1>
+						<pre><code style="font-size: 1.6em; overflow: hidden;">boolean erdeDrehtSich = galileo &amp;&amp; doch;
+						</code></pre>
+					</section>
+					<section>
+						<h2>Aufgabe</h2>
+						<p>Die Klimaanlage ist in Betrieb, falls:</p>
+						<ul>
+							<li>zwischen 17 und 56 Studenten im Saal sind (einschlie&szlig;lich 17 und 56), nicht mehr als 2 T&uuml;ren offen sind und die Uhrzeit in Stunden ungerade ist; oder</li>
+							<li>das Licht an ist und die Au&szlig;entemperatur gr&ouml;&szlig;er als 38,56 Grad Celsius ist.</li>
+						</ul>
+						<p>Geben Sie diesen Sachverhalt als einen Boolschen Java-Ausdruck mit den aus der vorherigen Teilaufgabe deklarierten Variablen an. Beachten Sie die Formatierungsregeln f&uuml;r Ausdr&uuml;cke.</p>
+					</section>
+					<section>
+						<h2>L&ouml;sung</h2>
+						<pre><code data-trim contenteditable data-lang="java">
+							boolean klimaanlageAn = 
+								( 17 <= numberOfStudents 
+									& numberOfStudents <= 56 
+									& openDoors <= 2 
+									& ( hour % 2 == 1 ) ) 
+								| ( lightOn & temperaturCelsius > 38.56 );
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Gleitkommazahl</h1>
+						<blockquote>
+							&ldquo;Es gibt nur 10 verschiedene Typen auf der Welt, die einen verstehen bin&auml;r, die anderen nicht.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h2>Von der Festkommazahl(B10) zur Gleitkommazahl(B2)</h2>
+						<h3 style="text-align: left;">18.4</h3>
 						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+							<li title="Exzess = 2(n-1)-1 (n Bits des Exponenten in der Zahlendarstellung)
+						   = 2(8-1)-1
+						   = (27)-1
+						   = 128-1
+						   = 127">Berechnung des Exzesses <small>(+127)</small></li>
+							<li title="Vorkommaanteil = 18
+							 18 / 2 = 9 Rest 0 (Least-Significant Bit)
+							 9 / 2 = 4 Rest 1
+							 4 / 2 = 2 Rest 0
+							 2 / 2 = 1 Rest 0
+							 1 / 2 = 0 Rest 1 (Most-Significant-Bit)
+							    = 10010
+Nachkommaanteil = 0.4
+							0,4 * 2 = 0,8 → 0 (Most-Significant-Bit)
+							0,8 * 2 = 1,6 → 1
+							0,6 * 2 = 1,2 → 1
+							0,2 * 2 = 0,4 → 0
+							0,4 * 2 = 0,8 → 0
+							0,8 * 2 = 1,6 → 1 (Least-Significant-Bit)
+							    •
+							    •
+							    •
+							    = 0,0110011001100110011...">Umwandlung der Dezimalzahl in eine duale Festkommazahl ohne Vorzeichen</li>
+							<li title="10010,01100110011... * 2^0 = 1,001001100110011... * 2^4">Normieren</li>
+							<li title="da 2^4 → Exponent=4
+							Exponent+Exzess
+							    4+127 = 131
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+131/2 = 65 Rest 1 (Least-Significant-Bit)
+							 65/2 = 32 Rest 1
+							 32/2 = 16 Rest 0
+							 16/2 = 8 Rest 0
+							 8/2 = 4 Rest 0
+							 4/2 = 2 Rest 0
+							 2/2 = 1 Rest 0
+							 1/2 = 0 Rest 1 (Most-Significant-Bit)
+							   = 10000011
+							">Berechnung des dualen Exponenten</li>
+							<li title="Das Vorzeichen errechnet sich aus der Formel (-1)^s:
+							positiv → 0
+							negativ → 1
+							   = 0
+							">Vorzeichen-Bit bestimmen</li>
+							<li title="1 Bit Vorzeichen + 8 Bit Exponent + 23 Bit Mantisse
+0 10000011 00100110011001100110011 → die Vorkomma-Eins wird als Hidden Bit weggelassen, da dort immer eine 1 steht, braucht man diese nicht zu speichern">Die Gleitkommazahl bilden</li>
+						</ol>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h2>Von Gleitkommazahl(B2) zur Festkommazahl(B10)</h2>
+						<h3 style="text-align: left;">0 10000011 00100110011001100110011</h3>
+						<ol>
+							<li>1.-6. alles rückwärts</li>
+						</ol>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<section>
+						<h2>Links</h2>
+					</section>
+					<section>
+						<ul>
+							<li><a href="https://hska.info">Fachschafts-Seite: hska.info</a></li>
+							<li><a href="https://ilias.hs-karlsruhe.de/repository.php?ref_id=89849">Link zur Ilias-Gruppe</a></li>
+							<li><a href="https://twitter.com/derGeruhn">Follow me on Twitter(@derGeruhn)</a></li>
+							<li><a href="http://andyperdana.de">AndyPerdana.de (Wenn ich sie neugebaut habe)</a></li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h1>END</h1>
+					<h3>gemacht von Andy Perdana</h3>
 				</section>
 
 			</div>
@@ -364,7 +406,7 @@ function linkify( selector ) {
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
